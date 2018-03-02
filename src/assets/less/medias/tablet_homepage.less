@@ -1,0 +1,106 @@
+@media only screen and (min-width: 680px) and (max-width:1024px) {
+
+    .homePage {
+        width: 100vw;
+        height: 100vh;
+        background-attachment: scroll;
+        .nav-logo {
+            display: none;
+        }
+        nav {
+            background-color:rgba(0,0,0,0.9);
+            min-width: 100vw;
+            .mobile-logo {
+            position: absolute;
+            visibility: visible;
+            opacity: 1;
+            right: 10%;
+            align-self: center;
+            top: 50%;
+            transform: translateY(-50%);
+            }
+            .hamburger_button {
+            transition: all .2s;
+            z-index: 100;
+            position: absolute;
+            left: 7%;
+            opacity: 1;
+            visibility: visible;
+            width: 35px;
+            height: 30px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+            top: 50%;
+            transform: translateY(-50%);
+                .line-one {
+                    border: 1px solid #f54e46;
+                    transition: .2s;
+                    width: 100%;
+                }
+                .line-two {
+                    border: 1px solid #f54e46;
+                    transition: .2s;                   
+                    width: 100%;
+                }
+                .line-three {
+                    border: 1px solid #f54e46;
+                    transition: .2s;
+                    width: 100%;                  
+                }
+            }
+        }
+        .navbar {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 50vw;
+            text-align: center;
+            height: 85vh;
+            position: absolute;
+            left: 0;
+            top: 100px;
+            background-color: rgba(0,0,0,0.9);
+            transition: .2s;
+            transform: translateX(-120vw);
+            li{
+                width: 100%;
+            }
+            .nodo-logo-li {
+                visibility: visible;
+                opacity: 1;
+            }
+         }
+         .homepage-big-title {
+             font-size: 7vw;
+         }
+         .homepage-scroll-box {
+             width: 85px;
+         }
+}
+.navbar-active {
+transform: translateX(0vw)!important;
+}
+.line-active {
+.line-one{
+position: absolute;
+transform: rotate(45deg);
+}
+.line-two {
+ position: absolute;
+ transform: rotate(45deg);
+}
+.line-three {
+ position: absolute;
+ transform: rotate(-45deg);
+}
+}
+.navitens {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+}

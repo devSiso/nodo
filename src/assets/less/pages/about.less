@@ -1,0 +1,129 @@
+body
+{
+    font-size: .8vw;
+}
+.about-area {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/about/about_background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    .about-box{
+        position: relative;
+        width: 75%;
+        top: 10%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+        height: 60%;
+        z-index: 1;
+        .about-title {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            height: 1px;
+            &:before,
+            &:after {
+                content: '';
+                display: block; 
+                height: 1px;
+                width: 100%;
+                background: gray;
+                flex: 2;
+            }
+            
+            p {
+                font-size: 4.0em;
+                letter-spacing: 4px;
+                color:rgb(170, 170, 170);
+                font-family: 'Montserrat-Bold', sans-serif;
+                margin: -30px 30px;
+            }
+        }
+        .about-text {
+            text-align: center;
+            align-self: center;
+            width: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            top: 60%;
+            p{
+                font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+	            font-size: 20px;
+	            font-style: normal;
+	            font-variant: normal;
+                color: lightgray;
+                span{
+                    color: #f54e46;
+                    margin: 0;
+                    padding: 0;
+                    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+	                font-size: 20px;
+	                font-style: normal;
+	                font-variant: normal;
+                }
+            }
+        }
+        .about-bottomTitle {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            height: 1px;
+            &:before,
+            &:after {
+                content: '';
+                display: block; 
+                height: 1px;
+                width: 100%;
+                background: gray;
+                flex: 2;
+            }
+            
+            p {
+                font-size: 2.0em;
+                letter-spacing: 2px;
+                color: rgb(170, 170, 170);
+                font-family: 'Montserrat-Bold', sans-serif;
+                margin: -15px 30px;
+            }
+        }
+    }
+    .worked_logos {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 75%;
+        height: 80px;
+        margin-left: 12.5%;
+        margin-top: 9.5%;
+        margin-right: 12.5%;
+        .logos_list{
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+            height: 100%;
+            .merck{
+                width: 130px;
+                height: 40px;
+                align-self: center;
+            }
+            .pfizer{
+                width: 90px;
+                height: 75px;
+            }
+            li{
+                width: 80px;
+            
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

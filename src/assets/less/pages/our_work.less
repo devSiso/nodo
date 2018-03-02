@@ -1,0 +1,186 @@
+.our_work_area {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    .our_work_list {
+        position: absolute;
+        display: flex;
+        flex-flow: row nowrap;
+        top: 50%;
+        left: 50%;
+        transform:translateX(-50%) translateY(-50%);
+        width: 50%;
+        height: 280px;
+        li{
+            height: 100%;
+            width: 33.3333%;
+            position: relative;
+            .item_logo {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+        }
+        .item_pfizer{
+            background-image: url("../img/our_works/bg_1.jpg");
+            background-size: 150% 100%;
+            background-position: center;
+            transition: .4s;
+            img{
+                width: 90px;
+                height: 50px;
+                transition: .6s;
+            }
+            &:hover {
+                .more_one {
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(-0vh) translateX(-50%);
+                }
+                .item_logo {
+                    top: 25%;
+                }
+            }
+        }
+        .item_orange {
+            background-image: url("../img/our_works/bg_2.jpg");
+            background-size: cover;
+            background-position: center;
+            transition: .4s;
+            img{
+                width: 90px;
+                height: 90px;
+                transition: .6s;
+            }
+            &:hover {
+                .more_two {
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(-0vh) translateX(-50%);
+                }
+                .item_logo{
+                    top: 25%;
+                }
+            }
+        }
+        .item_merck {
+            background-image: url("../img/our_works/bg_3.jpg");
+            background-size: 150% 150%;
+            background-position: top;
+            transition: .4s;
+            img{
+                width: 160px;
+                height: 50px;
+                transition: .6s;
+            }
+            &:hover {
+                .more_three {
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(-0vh) translateX(-50%);
+                }
+                .item_logo{
+                    top: 25%;
+                }
+            }
+        }
+        .red {
+            background-color: rgba(225, 0, 0, 0.6);
+        }
+    }
+    .our_work_title {
+            display: flex;
+            width: 75%;
+            margin: 5% auto;
+            &:before,
+            &:after {
+                content: '';
+                display: block;
+                height: 1px;
+                width: 100%;
+                background: lightgray;
+                flex: 2;
+            }
+            
+            p {
+                font-size: 4.0em;
+                letter-spacing: 4px;
+                color: rgb(146, 146, 146);
+                font-family: 'Montserrat-Bold', sans-serif;
+                margin: -30px 20px;
+                letter-spacing: 1.5px;
+            }
+    }
+}
+.moreBox {
+    width: 60px;
+    height: 30px;
+    left: 50%;
+    bottom: 10%;
+    position: absolute;
+    transform: translateX(-50%) translateY(3vh);
+    background-color: black;
+    text-decoration-color: white;
+    text-decoration-line: none;
+    transition: .6s;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    p{
+        color: white;
+        font-family: 'Montserrat-Regular', sans-serif;
+        font-size: 10px;
+        position: absolute;
+        transition: none;
+        top: 50%;
+        left: 50%;
+        transition: .2s;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    &:hover {
+        p{
+            color: lightgray;
+            font-family: 'Montserrat-Regular', sans-serif;
+            font-size: 10px;
+            position: absolute;
+            transition: none;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+        }
+    }
+}
+#pfizer_li:hover:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        clear: both;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(245, 78, 70, 0.8);
+}
+#orange_li:hover:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        clear: both;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(245, 78, 70, 0.8);
+}
+#merck_li:hover:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        clear: both;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(245, 78, 70, 0.8);
+}
