@@ -1,14 +1,15 @@
 @media only screen and (min-width: 680px) and (max-width:1024px) {
 
     .homePage {
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         background-attachment: scroll;
         .nav-logo {
             display: none;
         }
         nav {
             background-color:rgba(0,0,0,0.9);
+            min-width: 100vw;
             .mobile-logo {
             position: absolute;
             visibility: visible;
@@ -72,17 +73,11 @@
             }
          }
          .homepage-big-title {
-             font-size: 50px;
+             font-size: 7vw;
          }
          .homepage-scroll-box {
-            width: 85px;
-            .box-text {
-                display: none;
-            }
-            .box-mouse {
-                display: none;
-            }
-        }
+             width: 85px;
+         }
 }
 .navbar-active {
 transform: translateX(0vw)!important;

@@ -1,7 +1,7 @@
 @media only screen and (min-width: 320px) and (max-width:675px) {
 
     .homePage {
-        width: 100%;
+        width: 100vw;
         height: 100%;
         background-attachment: scroll;
         .nav-logo {
@@ -9,12 +9,19 @@
         }
         nav {
             background-color:rgba(0,0,0,0.9);
+            min-width: 100vw;
             height: 80px;
             .mobile-logo {
             position: absolute;
             visibility: visible;
             opacity: 1;
             right: 10%;
+            width: 122px;
+            height: 41px;
+            background-image: url('../img/intro/nodoLogo.png');
+            background-repeat: no-repeat;
+            background-size: 122px 41px;
+            background-position: center;
             }
             .hamburger_button {
             transition: all .2s;
@@ -50,9 +57,9 @@
                    flex-flow: column wrap;
                    justify-content: space-around;
                    align-items: center;
-                   width: 100%;
+                   width: 100vw;
                    text-align: center;
-                   height: 75vh;
+                   height: 60vh;
                    position: absolute;
                    left: 0;
                    top: 80px;
@@ -68,16 +75,11 @@
                    }
                 }
                 .homepage-big-title {
-                    font-size: 24.499px;
+                    font-size: 7vw;
                 }
                 .homepage-scroll-box {
                     width: 85px;
-                    .box-text {
-                        display: none;
-                    }
-                    .box-mouse {
-                        display: none;
-                    }
+                    display: none;
                 }
     }
     .navbar-active {

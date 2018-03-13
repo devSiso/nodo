@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../fonts/Montserrat-Regular.otf');
+}
 body{
     margin: 0;
 }
@@ -25,7 +29,17 @@ body{
             -webkit-user-select: none !important;
             -ms-user-select: none !important;
             user-select: none !important;
-            margin-left: 10%;
+            background-image: url('../img/intro/nodoLogo.png');
+            width: 122px;
+            height: 41px;
+            background-repeat: no-repeat;
+            background-size: 122px 41px;
+            background-position: center;
+            margin-left: 150px;
+            text-align: center;
+            strong {
+                display: none;
+            }
         }
         .mobile-logo{
             visibility: hidden;
@@ -44,14 +58,17 @@ body{
             list-style-type: none;
             width: 52%;
             height: 100%;
-            margin-right: 20px;
                 .nav-item{
                     font-size: 16px;
                     margin-right: 5px;
                     font-family: 'Montserrat-Regular', sans-serif;
-                    font-weight: 100;
                     color: #ffffff;
                     transition: .2s;
+                    a{
+                        text-decoration-line: none;
+                        text-decoration-color: #ffffff;
+                        color: #ffffff;
+                    }
                     &:hover{
                         color: lightgray;
                         cursor: pointer;
@@ -69,12 +86,11 @@ body{
                 text-align: center;
                 font-size: 6.0em;
                 font-family: 'Montserrat-Regular', sans-serif;
-                font-weight: 100;
                 color: #f54e46;
-                b {
-                    font-family: 'Montserrat-Regular', sans-serif;
-                    font-weight: 400;
+                strong{
+                    font-family: 'Montserrat-Medium', sans-serif;
                 }
+    
             }
             .homepage-scroll-box{
                 position: absolute;
@@ -118,7 +134,6 @@ body{
                     font-size: 15px;
                     color: white;
                     font-family: 'Montserrat-Regular', sans-serif;
-                    font-weight: 100;
                     transition: .2s;
                     }
                 }

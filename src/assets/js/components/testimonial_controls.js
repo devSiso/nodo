@@ -1,18 +1,7 @@
 jQuery(document).ready(function ($) {
-    $('#carousel-indicator-one').on('click', function () {
-        $('#carousel-indicator-one').addClass('red-background-active');
-        $('#carousel-indicator-two').removeClass('red-background-active');
-        $('#carousel-indicator-three').removeClass('red-background-active');
-    });
-    $('#carousel-indicator-two').on('click', function () {
-        $('#carousel-indicator-two').addClass('red-background-active');
-        $('#carousel-indicator-one').removeClass('red-background-active');
-        $('#carousel-indicator-three').removeClass('red-background-active');
-    });
-    $('#carousel-indicator-three').on('click', function () {
-        $('#carousel-indicator-three').addClass('red-background-active');
-        $('#carousel-indicator-two').removeClass('red-background-active');
-        $('#carousel-indicator-one').removeClass('red-background-active');
+    $('.circle').on('click', function () {
+        $('.circle').removeClass('red-background-active');
+        $(this).addClass('red-background-active');
     });
     $('.circle').on('click', function () {
         var position = $(this).data('position');

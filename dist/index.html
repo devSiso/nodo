@@ -23,19 +23,18 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>nodo </title>
 </head>
 
 <body>
-    <div class="homePage">
+    <div class="homePage" id="home">
         <nav id="navbar">
             <div class="nav-logo">
-                <img src="img/intro/nodoLogo.png" alt="nodoLogo" draggable="false">
+                <strong>NODO</strong>
             </div>
             <div class="mobile-logo">
-                <img src="img/intro/nodoLogo.png" alt="nodo_character">
+                <strong>NODO</strong>
             </div>
             <div class="hamburger_button">
                 <div class="line-one"></div>
@@ -44,23 +43,23 @@
             </div>
             <ul class="navbar" id="menu-nav">
                 <div class="navitens">
-                    <li class="nav-item" id="home_button">
-                        HOME
+                    <li class="nav-item" data-nav="#home">
+                        <a href="#home">HOME</a>
                     </li>
-                    <li class="nav-item" id="testimonials_button">
-                        TESTIMONIALS
+                    <li class="nav-item" data-nav="#testimonials">
+                        <a href="#testimonials">TESTIMONIALS</a>
                     </li>
-                    <li class="nav-item" id="about_button">
-                        ABOUT
+                    <li class="nav-item" data-nav="#about">
+                        <a href="#about">ABOUT</a>
                     </li>
-                    <li class="nav-item" id="services_button">
-                        SERVICES
+                    <li class="nav-item" data-nav="#services-area">
+                        <a href="#services-area">SERVICES</a>
                     </li>
-                    <li class="nav-item" id="our_work_button">
-                        OUR WORK
+                    <li class="nav-item" data-nav="#our-work-area">
+                        <a href="#our-work-area">OUR WORK</a>
                     </li>
-                    <li class="nav-item" id="contact_button">
-                        CONTACT
+                    <li class="nav-item" data-nav="#contact-area">
+                        <a href="#contact-area">CONTACT</a>
                     </li>
                 </div>
                 <li class="nodo-logo-li">
@@ -69,7 +68,7 @@
             </ul>
         </nav>
         <div class="homepage-big-title">
-            <b>DEVELOPING THE WEB</b>
+            <strong>DEVELOPING THE WEB</strong>
             </br>
             IN THE HEART OF RS
         </div>
@@ -90,8 +89,8 @@
     <div class="testimonials">
         <div class="testimonials-lines-area">
             <div class="testimonials-title">
-                <p>
-                    <b>TESTIMONIALS</b>
+                <p id="testimonials">
+                    <strong>TESTIMONIALS</strong>
                 </p>
             </div>
             <div class="testimonial-colon-area">
@@ -109,20 +108,20 @@
             </div>
             <div class="testimonials-text-big slide-1 center">
                 <p>
-                    <b>They showed remarkable competence.
-                    </b>
+                    <strong>They showed remarkable competence.
+                    </strong>
                 </p>
             </div>
             <div class="testimonials-text-big slide-2 right">
                 <p>
-                    <b>Lorem Ipsum is simply dummy text of the printing.
-                    </b>
+                    <strong>Lorem Ipsum is simply dummy text of the printing.
+                    </strong>
                 </p>
             </div>
             <div class="testimonials-text-big slide-3 right">
                 <p>
-                    <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </b>
+                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </strong>
                 </p>
             </div>
             <div class="retangle slide-1 center">
@@ -162,21 +161,23 @@
         </div>
     </div>
     <!-- about -->
-    <div class="about-area">
+    <div class="about-area" id="about">
         <div class="about-box">
             <div class="about-title">
                 <p>
-                    <b>
+                    <strong>
                         ABOUT
-                    </b>
+                    </strong>
                 </p>
             </div>
             <div class="about-text">
                 <p>
                     Wait, wasn't the whole idea of going digital meant to make our jobs easier?
                     <br/>
+                    <br/>
                     <br/>Lorem ipsumf dolor met lorem dolor met lorem ipsum dolor metipsumf dolor met lorem dolor met lorem ipsum
                     dolor metipsumf dolor met lorem dolor met lorem ipsum dolor met.
+                    <br/>
                     <br/>
                     <br/>I bet you wish web development outsourcing
                     <br/> was as simple as:
@@ -205,7 +206,7 @@
         </div>
     </div>
     <!--services-->
-    <div class="services-area">
+    <div class="services-area" id="services-area">
         <div class="services-box">
             <div class="services_top_title">
                 <p>
@@ -217,7 +218,7 @@
                     <img src="img/services/services_1.png" alt="services1" draggable="false">
                     <div class="text-box">
                         <h1>
-                            <b>FRONT-END</b>
+                            <strong>FRONT-END</strong>
                             <br> DEVLOPMENT
                         </h1>
                         <p>
@@ -234,7 +235,7 @@
                     <img src="img/services/services_2.png" alt="services2" draggable="false">
                     <div class="text-box">
                         <h1>
-                            <b>BACK-END</b>
+                            <strong>BACK-END</strong>
                             <br> DEVLOPMENT
                         </h1>
                         <p>
@@ -251,7 +252,7 @@
                     <img src="img/services/services_3.png" alt="services3" draggable="false">
                     <div class="text-box">
                         <h1>
-                            <b>CONSULTING</b>
+                            <strong>CONSULTING</strong>
                             <br> SERVICES
                         </h1>
                         <p>
@@ -274,40 +275,40 @@
         </div>
         <ul class="language-list">
             <li>
-                <img src="img/services/angular_js.png" alt="angularJS">
+                <strong>Angular JS</strong>
             </li>
             <li>
-                <img src="img/services/redis.png" alt="redis">
+                <strong>REDIS</strong>
             </li>
             <li>
-                <img src="img/services/javascript.png" alt="JS">
+                <strong>JavaScript</strong>
             </li>
             <li>
-                <img src="img/services/phyton.png" alt="Phyton">
+                <strong>Phyton</strong>
             </li>
         </ul>
     </div>
     <!-- our work area -->
     <div class="our_work_area">
         <div class="our_work_title">
-            <p>
+            <p id="our-work-area">
                 OUR WORK
             </p>
         </div>
         <ul class="our_work_list">
-            <li class="item_pfizer" id="pfizer_li">
+            <li class="item_pfizer client" id="pfizer_li">
                 <img src="img/our_works/pfizer_white.png" alt="pfizer" class="item_logo">
                 <a href="#" class="moreBox more_one">
                     <p>MORE</p>
                 </a>
             </li>
-            <li class="item_orange" id="orange_li">
+            <li class="item_orange client" id="orange_li">
                 <img src="img/our_works/orange_white.png" alt="orange" class="item_logo">
                 <a href="#" class="moreBox more_two">
                     <p>MORE</p>
                 </a>
             </li>
-            <li class="item_merck" id="merck_li">
+            <li class="item_merck client" id="merck_li">
                 <img src="img/our_works/merck_white.png" alt="merck" class="item_logo">
                 <a href="#" class="moreBox more_three">
                     <p>MORE</p>
@@ -316,7 +317,7 @@
         </ul>
     </div>
     <!-- contacts area -->
-    <footer class="contacts-area">
+    <footer class="contacts-area" id="contact-area">
         <div class="contact-box">
             <div class="adress">
                 <div class="logo_adress">
